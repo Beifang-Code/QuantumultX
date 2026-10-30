@@ -1,0 +1,13 @@
+# 临时文件
+temp/
+*.log
+
+# 含敏感信息的本地全量配置（证书/订阅），仅保留占位符版本
+profile/QX_Config.local.conf
+*.local.conf
+
+# 证书与凭据类文件，一律不入库
+*.p12
+*.pem
+*.key
+.env
