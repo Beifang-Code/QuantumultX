@@ -1,0 +1,36 @@
+# 本地覆盖规则（显式顺序版）
+# 维护：Beifang-Code ｜ 2026-10-30
+# 目的：这些规则必须先于后加载的远程规则（Apple.list→direct、Global.list 等）命中，
+# 原先放在 [filter_local] 依赖"本地先于远程"的顺序假设，实测不可靠，故收编为
+# [filter_remote] 中排位最前的订阅，把匹配顺序显式化。
+#
+# ═══ App Store 港区 API → Apple 策略组（覆盖 Apple.list 的 direct）═══
+host, apps.apple.com, Apple
+host, amp-api-search-edge.apps.apple.com, Apple
+host, amp-api-updates.apps.apple.com, Apple
+host, amp-api.apps.apple.com, Apple
+host, amp-api.media.apple.com, Apple
+host, api-edge.apps.apple.com, Apple
+host, api.apps.apple.com, Apple
+host, bag.itunes.apple.com, Apple
+host, client-api.itunes.apple.com, Apple
+host, cma.itunes.apple.com, Apple
+host, init.itunes.apple.com, Apple
+host, iosapps-ssl.itunes.apple.com, Apple
+host, iosapps.itunes.apple.com, Apple
+host, itunes.apple.com, Apple
+host, search.itunes.apple.com, Apple
+host, se.itunes.apple.com, Apple
+host, se-edge.itunes.apple.com, Apple
+host, se2.itunes.apple.com, Apple
+host, sf-api-token-service.itunes.apple.com, Apple
+host, sp.itunes.apple.com, Apple
+host, pd.itunes.apple.com, Apple
+host, play.itunes.apple.com, Apple
+host, uts-api.itunes.apple.com, Apple
+host-keyword, buy.itunes.apple.com, Apple
+#
+# ═══ Turrit（第三方 TG 客户端）→ Telegram 策略组 ═══
+host, iturrit.com, Telegram
+host-suffix, iturrit.com, Telegram
+host-keyword, turrit, Telegram
