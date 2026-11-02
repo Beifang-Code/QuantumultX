@@ -29,8 +29,3 @@ host, pd.itunes.apple.com, Apple
 host, play.itunes.apple.com, Apple
 host, uts-api.itunes.apple.com, Apple
 host-keyword, buy.itunes.apple.com, Apple
-#
-# ═══ Turrit（第三方 TG 客户端）→ Telegram 策略组 ═══
-host, iturrit.com, Telegram
-host-suffix, iturrit.com, Telegram
-host-keyword, turrit, Telegram

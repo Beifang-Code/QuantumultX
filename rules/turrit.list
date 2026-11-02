@@ -1,0 +1,7 @@
+# Turrit（第三方 Telegram 客户端）分流规则
+# 维护：Beifang-Code ｜ 2026-10-30 创建，2026-11-02 独立成订阅
+# 覆盖：Turrit 私有域名（官方 TG 域名/IP 由 blackmatrix7 Telegram.list 负责）
+# 引用方式：[filter_remote] 中独立订阅，规则更新无需动主配置
+host, iturrit.com, Telegram
+host-suffix, iturrit.com, Telegram
+host-keyword, turrit, Telegram
